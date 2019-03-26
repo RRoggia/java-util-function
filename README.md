@@ -59,7 +59,7 @@ It provides `Function` for primitive data types such `double`, `long` and `int`.
 * `LongUnaryOperator`
 
 
-## BiFunction\<T,U,V>
+## BiFunction\<T,U,R>
 A `BiFunction` is similar to a `Function`, but it receives two input parameters `T` and `U` and it also has an output parameter `R`. Similar to the `Function` it also provides an `andThen()` method that can be used to chain a `BiFunction` to a `Function` and return another `BiFunction`.
 
  The `BiFunction` supports the `double`, `int` and `long` primitive types as an output parameter through similar functional interfaces, where the primitive type is the output parameter.
