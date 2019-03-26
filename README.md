@@ -33,3 +33,27 @@ Receives one parameter and provide no result through the `accept()`. It's possib
 * `ObjIntConsumer<T>`
 * `ObjLongConsumer<T>`
 
+## Function \<T,R>
+The method `apply()` receives an parameter`T` and returns and object of type `R`. It's possible to use `andThen()` to receive a `Function<R,V>` therefore chaining it and creating an `Function<T,V>`. Same applies to the `compose()`, but instead of adding after the function, it is built before it. For example, `Function<T,R>` composed by `Function<V,T>` creates a `Function<V,R>`. The static method `identity()` creates a function that the input type is the same as the output type, for example `Function<T,T>`.
+
+It provides `Function` for primitive data types such `double`, `long` and `int`. Where the input parameter is the primitive data type and the output parameter is an object `R`. The API also provides functional interfaces with the input parameter as an object `T` and the ouput as a primitive type such as `Double`, `Long` or `Int`. A third variation is both input and output parameter as primitive types such as `double,int`, `double,long`, `int ,double`, `int, long`, `long, double` and `long, int`.  
+
+A `BiFunction` is similar to a `Function`, but it receives two input parameters `T` and `U` and it also has an output parameter `R`. The `BiFunction` supports the `double`, `int` and `long` primitive types as an output parameter through similar functional interfaces.
+
+* `Function<T,R>`
+* `DoubleFunction<R>`
+* `IntFunction<R>`
+* `LongFunction<R>`
+* `ToDoubleFunction<T>`
+* `ToIntFunction<T>`
+* `ToLongFunction<T>`
+* `DoubleToIntFunction`
+* `DoubleToLongFunction`
+* `IntToDoubleFunction`
+* `IntToLongFunction`
+* `LongToDoubleFunction`
+* `LongToIntFunction`
+* `BiFunction<T,U,R>`
+* `ToDoubleBiFunction<T,U>`
+* `ToIntBiFunction<T,U>`
+* `ToLongBiFunction<T,U>`
