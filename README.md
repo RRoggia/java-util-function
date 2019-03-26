@@ -1,5 +1,5 @@
 # java-util-function
-
+[Javadoc](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html)
 
 ## Supplier\<T>
 Supplies a result through the `get()` method. Functional Interface available for `boolean`, `int`, `double` and `long` primitive types.
