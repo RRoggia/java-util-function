@@ -20,3 +20,16 @@ Variations for primitive data types support `double`, `int` and `long`, in this 
 * `IntPredicate`
 * `LongPredicate`
 * `BiPredicate<T,U>`
+
+## Consumer \<T>
+Receives one parameter and provide no result through the `accept()`. It's possible to chain `Consumers<T>` through the `andThen()` method. It's the only side-effect based functional interface (which means don't operate through the return of a value). Provides variations for `double`, `int`, and `long` primitive types, where the input parameter is the primitive type.There is also a variation where you receive two parameters see the `BiConsumer<T,U>`. There are also variations of the `Biconsumer` for `double`, `int` and `long` primitive types, in this case, the function receives two parameters, one object `T` and one primitive type depending on the functional interface.
+
+* `Consumer<T>`
+* `DoubleConsumer`
+* `IntConsumer`
+* `LongConsumer`
+* `BiConsumer<T,U>`
+* `ObjDoubleConsumer<T>`
+* `ObjIntConsumer<T>`
+* `ObjLongConsumer<T>`
+
