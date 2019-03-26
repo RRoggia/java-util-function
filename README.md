@@ -41,22 +41,18 @@ It provides `Function` for primitive data types such `double`, `long` and `int`.
 `UnaryOperation<T>` it's the same as the `Function` static method `identity()`, creates a function that the input type is the same as the output type, `t -> t`. There are the functional interfaces for `double`, `int` and `long` primitive types.
 
 * `Function<T,R>`
-
 * `DoubleFunction<R>`
 * `IntFunction<R>`
 * `LongFunction<R>`
-
 * `ToDoubleFunction<T>`
 * `ToIntFunction<T>`
 * `ToLongFunction<T>`
-
 * `DoubleToIntFunction`
 * `DoubleToLongFunction`
 * `IntToDoubleFunction`
 * `IntToLongFunction`
 * `LongToDoubleFunction`
 * `LongToIntFunction`
-
 * `UnaryOperator<T>`
 * `DoubleUnaryOperator`
 * `IntUnaryOperator`
@@ -76,7 +72,6 @@ A `BiFunction` is similar to a `Function`, but it receives two input parameters 
 * `ToDoubleBiFunction<T,U>`
 * `ToIntBiFunction<T,U>`
 * `ToLongBiFunction<T,U>`
-
 * `BinaryOperator<T>`
 * `DoubleBinaryOperator`
 * `IntBinaryOperator`
